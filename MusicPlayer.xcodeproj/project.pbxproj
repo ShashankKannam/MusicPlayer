@@ -12,6 +12,9 @@
 		386291EA1DAC35060011FD77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 386291E81DAC35060011FD77 /* Main.storyboard */; };
 		386291EC1DAC35060011FD77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 386291EB1DAC35060011FD77 /* Assets.xcassets */; };
 		386291EF1DAC35060011FD77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 386291ED1DAC35060011FD77 /* LaunchScreen.storyboard */; };
+		386291F71DAC530B0011FD77 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386291F61DAC530B0011FD77 /* VideoViewController.swift */; };
+		386291FC1DAC55760011FD77 /* partyCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386291FB1DAC55760011FD77 /* partyCellTableViewCell.swift */; };
+		386291FE1DAC59620011FD77 /* Party.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386291FD1DAC59620011FD77 /* Party.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		386291EB1DAC35060011FD77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		386291EE1DAC35060011FD77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		386291F01DAC35060011FD77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		386291F61DAC530B0011FD77 /* VideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		386291FB1DAC55760011FD77 /* partyCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = partyCellTableViewCell.swift; sourceTree = "<group>"; };
+		386291FD1DAC59620011FD77 /* Party.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Party.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,41 @@
 		386291E31DAC35060011FD77 /* MusicPlayer */ = {
 			isa = PBXGroup;
 			children = (
-				386291E41DAC35060011FD77 /* AppDelegate.swift */,
-				386291E61DAC35060011FD77 /* ViewController.swift */,
+				386291F81DAC55010011FD77 /* Model */,
+				386291F91DAC55090011FD77 /* view */,
+				386291FA1DAC551B0011FD77 /* Controller */,
 				386291E81DAC35060011FD77 /* Main.storyboard */,
+				386291E41DAC35060011FD77 /* AppDelegate.swift */,
 				386291EB1DAC35060011FD77 /* Assets.xcassets */,
 				386291ED1DAC35060011FD77 /* LaunchScreen.storyboard */,
 				386291F01DAC35060011FD77 /* Info.plist */,
 			);
 			path = MusicPlayer;
+			sourceTree = "<group>";
+		};
+		386291F81DAC55010011FD77 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				386291FD1DAC59620011FD77 /* Party.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		386291F91DAC55090011FD77 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				386291FB1DAC55760011FD77 /* partyCellTableViewCell.swift */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		386291FA1DAC551B0011FD77 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				386291E61DAC35060011FD77 /* ViewController.swift */,
+				386291F61DAC530B0011FD77 /* VideoViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +170,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				386291E71DAC35060011FD77 /* ViewController.swift in Sources */,
+				386291FE1DAC59620011FD77 /* Party.swift in Sources */,
 				386291E51DAC35060011FD77 /* AppDelegate.swift in Sources */,
+				386291FC1DAC55760011FD77 /* partyCellTableViewCell.swift in Sources */,
+				386291F71DAC530B0011FD77 /* VideoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +335,7 @@
 				386291F51DAC35060011FD77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
